@@ -1,0 +1,1562 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+    <link rel="icon" type="image/png" sizes="32x32" href="wallet.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="wallet.png">
+    <link rel="apple-touch-icon" href="wallet.png">
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112928603', 'ym');
+
+    ym(112928603, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112928603" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+<!-- СКРИПТ: СОХРАНЕНИЕ РЕКЛАМНЫХ ДАННЫХ И CLIENTID -->
+<script>
+    (function() {
+        var urlParams = new URLSearchParams(window.location.search);
+        var yclid = urlParams.get('yclid');
+        var campaignId = urlParams.get('utm_campaign');
+        var adId = urlParams.get('utm_content');
+        var keyword = urlParams.get('utm_term');
+        var region = urlParams.get('region_name');
+
+        if (yclid) localStorage.setItem('yclid', yclid);
+        if (campaignId) localStorage.setItem('campaign_id', campaignId);
+        if (adId) localStorage.setItem('ad_id', adId);
+        if (keyword) localStorage.setItem('keyword', keyword);
+        if (region) localStorage.setItem('region_name', region);
+
+        ym(112928603, 'getClientID', function(clientID) {
+            localStorage.setItem('client_id', clientID);
+        });
+    })();
+</script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Займ на карту: сравните МФО и выберите условия</title>
+    <meta name="description" content="Первый займ бесплатно доступен новым клиентам на условиях конкретной МФО. Сравните сумму, срок и ставку и отправьте заявку за несколько минут.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 14px;
+            line-height: 1.57;
+            color: #303446;
+            background-color: #f8fafd;
+        }
+
+        /* ===== Шапка ===== */
+        .header {
+            background-color: #fff;
+            padding: 20px 0;
+        }
+
+        .header__container {
+            max-width: 1232px;
+            margin: 0 auto;
+            padding: 0 16px;
+            display: flex;
+            align-items: center;
+        }
+
+        .header__logo {
+            font-size: 20px;
+            font-weight: 700;
+            color: #0a0e20;
+            text-decoration: none;
+            letter-spacing: 0.2px;
+        }
+
+        .container {
+            max-width: 1232px;
+            margin: 0 auto;
+            padding: 0 16px;
+        }
+
+        /* ===== Верхний блок-заголовок (белая карточка) ===== */
+        .hero {
+            background: #fff;
+            border-radius: 12px;
+            padding: 24px;
+            margin: 32px 0;
+            line-height: 1.55;
+        }
+
+        .hero__title {
+            font-size: 32px;
+            font-weight: 600;
+            line-height: 1.3;
+            color: #0a0e20;
+            margin: 0 0 16px;
+        }
+
+        .hero__subtitle {
+            font-size: 16px;
+            font-weight: 400;
+            color: #535661;
+            margin: 0;
+            max-width: 780px;
+        }
+
+        @media (max-width: 639px) {
+            .hero { padding: 20px 16px; }
+            .hero__title { font-size: 24px; margin-bottom: 12px; }
+            .hero__subtitle { font-size: 14px; }
+            .header__logo { font-size: 17px; }
+        }
+
+        /* ===== Заголовки ===== */
+        .title {
+            font-size: 32px;
+            font-weight: 600;
+            line-height: 1.3;
+            color: #0a0e20;
+            margin: 0 0 16px;
+        }
+
+        .subtitle {
+            font-size: 16px;
+            color: #535661;
+            margin: 0 0 32px;
+            max-width: 780px;
+        }
+
+        /* ===== Карточки предложений ===== */
+        .offers__title {
+            font-size: 28px;
+            font-weight: 600;
+            color: #0a0e20;
+            margin: 32px 0 8px;
+        }
+
+        .offers__subtitle {
+            font-size: 14px;
+            font-weight: 500;
+            color: #303446;
+            margin: 0 0 24px;
+            max-width: 606px;
+        }
+
+        .offers__list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 16px;
+        }
+
+        .offer {
+            background: #fff;
+            border-radius: 16px;
+            padding: 20px 24px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.05);
+            display: flex;
+            flex-direction: column;
+            transition: box-shadow 0.2s ease;
+        }
+
+        .offer:hover {
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        /* ===== Баннер ===== */
+        .offer__banner {
+            position: relative;
+            width: 100%;
+            height: 140px;
+            border-radius: 12px;
+            overflow: hidden;
+            margin-bottom: 12px;
+        }
+
+        .offer__banner-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            display: block;
+        }
+
+        .offer__banner--alt1 { background: linear-gradient(135deg, #1c3f6e, #2f6fbb); }
+        .offer__banner--alt2 { background: linear-gradient(135deg, #6e2b1c, #bb5a2f); }
+        .offer__banner--alt3 { background: linear-gradient(135deg, #4a1c6e, #8a2fbb); }
+        .offer__banner--alt4 { background: linear-gradient(135deg, #6e1c4f, #bb2f8a); }
+        .offer__banner--alt5 { background: linear-gradient(135deg, #1c6e5a, #2fbb9a); }
+        .offer__banner--alt6 { background: linear-gradient(135deg, #6e5a1c, #bb9a2f); }
+        .offer__banner--alt7 { background: linear-gradient(135deg, #2b1c6e, #5a2fbb); }
+
+        /* ===== Название под баннером (влево, крупнее) ===== */
+        .offer__name {
+            font-size: 18px;
+            font-weight: 600;
+            color: #0a0e20;
+            margin: 0 0 8px;
+            text-align: left;
+        }
+
+        /* ===== Бейдж USP поверх баннера справа снизу ===== */
+        .offer__usp {
+            position: absolute;
+            right: 12px;
+            bottom: 12px;
+            z-index: 2;
+            display: inline-block;
+            font-size: 10px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.2px;
+            color: #12553a;
+            background-color: #eaffbf;
+            padding: 2px 8px;
+            border-radius: 4px;
+        }
+
+        /* ===== Плашка «Бесплатно» под названием ===== */
+        .offer__free-badge {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 8px;
+            background: #eaffbf;
+            border: 1px solid #c8e88a;
+            border-radius: 8px;
+            padding: 8px 12px;
+            margin: 0 0 12px;
+        }
+
+        .offer__free-label {
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+            color: #12553a;
+        }
+
+        .offer__free-value {
+            font-size: 16px;
+            font-weight: 700;
+            color: #0a0e20;
+        }
+
+        .offer__params {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-bottom: 16px;
+            flex-grow: 1;
+        }
+
+        .offer__item {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            color: #4d5163;
+        }
+
+        .offer__item-value {
+            font-weight: 500;
+            color: #303446;
+            text-align: right;
+        }
+
+        .offer__item_sum .offer__item-value {
+            font-size: 18px;
+            font-weight: 700;
+            color: #0a0e20;
+        }
+
+        /* ===== Кнопка ===== */
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 12px 16px;
+            background-color: #fca33b;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 20px;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.2s, box-shadow 0.2s;
+        }
+
+        .btn:hover {
+            background-color: #ffd15c;
+            box-shadow: 0 6px 12px rgba(255, 209, 92, 0.5);
+        }
+
+        .btn:active {
+            background-color: #fa9620;
+            box-shadow: 0 4px 8px rgba(255, 209, 92, 0.5);
+        }
+
+        /* ===== Кнопка «Изменить выбор МФО» ===== */
+        .survey-open-btn {
+            display: inline-block;
+            margin-bottom: 16px;
+            padding: 8px 14px;
+            background: #f5f6f8;
+            color: #303446;
+            border: 1px solid #d9dce3;
+            border-radius: 8px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .survey-open-btn:hover {
+            background: #e6e8ee;
+        }
+
+        /* ===== Информационные блоки ===== */
+        .info-block {
+            background: #fff;
+            border-radius: 12px;
+            padding: 24px;
+            margin: 32px 0;
+            line-height: 1.55;
+        }
+
+        .info-block h2 {
+            font-size: 24px;
+            font-weight: 700;
+            color: #0a0e20;
+            margin: 0 0 16px;
+        }
+
+        .info-block h3 {
+            font-size: 17px;
+            font-weight: 700;
+            color: #12553a;
+            margin: 0 0 8px;
+        }
+
+        .info-block p { margin: 0 0 12px; color: #323235; }
+
+        .info-block ul, .info-block ol {
+            margin: 0 0 12px;
+            padding-left: 20px;
+        }
+
+        .info-block li { margin-bottom: 8px; }
+
+        .info-cols {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 16px;
+            margin: 16px 0;
+        }
+
+        .info-box {
+            background: #f5f6f8;
+            border-radius: 10px;
+            padding: 18px;
+        }
+
+        .info-note {
+            background: #fff8e1;
+            border-left: 4px solid #f2c94c;
+            padding: 14px 16px;
+            border-radius: 0 10px 10px 0;
+            margin-top: 16px;
+        }
+
+        /* ===== FAQ ===== */
+        .faq { margin: 32px 0; }
+
+        .faq details {
+            background: #f5f6f8;
+            border-radius: 10px;
+            margin-bottom: 8px;
+        }
+
+        .faq summary {
+            cursor: pointer;
+            list-style: none;
+            padding: 14px 46px 14px 16px;
+            position: relative;
+            font-weight: 600;
+            color: #0a0e20;
+        }
+
+        .faq summary::-webkit-details-marker { display: none; }
+
+        .faq summary::after {
+            content: "+";
+            position: absolute;
+            right: 16px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 22px;
+            color: #12553a;
+            line-height: 1;
+        }
+
+        .faq details[open] summary::after { content: "−"; }
+
+        .faq details p {
+            padding: 0 16px 14px;
+            margin: 0;
+            color: #323235;
+        }
+
+        /* ===== Реквизиты МФО ===== */
+        .mfo-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 8px 12px;
+            align-items: start;
+            margin: 16px 0;
+        }
+
+        .mfo-item {
+            background: #f5f6f8;
+            border-radius: 10px;
+            margin: 0;
+        }
+
+        .mfo-item summary {
+            cursor: pointer;
+            list-style: none;
+            padding: 14px 46px 14px 16px;
+            position: relative;
+            font-weight: 600;
+            color: #0a0e20;
+        }
+
+        .mfo-item summary::-webkit-details-marker { display: none; }
+
+        .mfo-item summary::after {
+            content: "+";
+            position: absolute;
+            right: 16px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 22px;
+            color: #12553a;
+            line-height: 1;
+        }
+
+        .mfo-item[open] summary::after { content: "−"; }
+
+        .mfo-item summary span {
+            display: block;
+            font-weight: 400;
+            font-size: 14px;
+            color: #535661;
+            margin-top: 2px;
+        }
+
+        .mfo-item dl {
+            margin: 0;
+            padding: 0 16px 14px;
+            font-size: 14px;
+        }
+
+        .mfo-item dt { color: #535661; margin-top: 8px; }
+        .mfo-item dd { margin: 0; }
+
+        /* ===== Подвал ===== */
+        .footer {
+            background-color: #f5f7f9;
+            text-align: center;
+            padding: 32px 24px;
+            margin-top: 32px;
+            font-size: 14px;
+            color: #6a6e7e;
+            line-height: 1.6;
+        }
+
+        .footer p { margin: 0 0 12px; white-space: pre-line; }
+        .footer p:last-child { margin-bottom: 0; }
+
+        .footer a { color: #12553a; }
+
+        /* ===== Модальное окно опроса ===== */
+        .survey-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(10, 14, 32, 0.55);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 16px;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.25s ease, visibility 0.25s ease;
+        }
+
+        .survey-overlay.is-open {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .survey {
+            background: #fff;
+            border-radius: 16px;
+            padding: 28px 24px;
+            max-width: 560px;
+            width: 100%;
+            max-height: 90vh;
+            overflow-y: auto;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+            transform: translateY(12px);
+            transition: transform 0.25s ease;
+        }
+
+        .survey-overlay.is-open .survey {
+            transform: translateY(0);
+        }
+
+        .survey__title {
+            font-size: 22px;
+            font-weight: 700;
+            color: #0a0e20;
+            margin: 0 0 8px;
+            line-height: 1.3;
+        }
+
+        .survey__text {
+            font-size: 15px;
+            color: #535661;
+            margin: 0 0 20px;
+        }
+
+        .survey__list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+            gap: 8px;
+            margin-bottom: 20px;
+        }
+
+        .survey__option {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 12px;
+            background: #f5f6f8;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 500;
+            color: #303446;
+            border: 2px solid transparent;
+            transition: border-color 0.15s, background-color 0.15s;
+            user-select: none;
+        }
+
+        .survey__option:hover {
+            background: #eef0f4;
+        }
+
+        .survey__option input {
+            margin: 0;
+            accent-color: #12553a;
+            width: 16px;
+            height: 16px;
+            flex-shrink: 0;
+        }
+
+        .survey__option.is-checked {
+            border-color: #12553a;
+            background: #eaffbf;
+        }
+
+        .survey__actions {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .survey__btn {
+            flex: 1 1 200px;
+            padding: 12px 16px;
+            border-radius: 8px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            border: none;
+            transition: background-color 0.2s, box-shadow 0.2s;
+        }
+
+        .survey__btn--primary {
+            background: #fca33b;
+            color: #fff;
+        }
+
+        .survey__btn--primary:hover {
+            background: #ffd15c;
+            box-shadow: 0 6px 12px rgba(255, 209, 92, 0.5);
+        }
+
+        .survey__btn--secondary {
+            background: #f5f6f8;
+            color: #303446;
+        }
+
+        .survey__btn--secondary:hover {
+            background: #e6e8ee;
+        }
+
+        /* Скрытые карточки */
+        .offer.is-hidden {
+            display: none;
+        }
+
+        /* ===== Адаптивность ===== */
+        @media (max-width: 639px) {
+            .title { font-size: 24px; }
+            .offers__list { grid-template-columns: 1fr; }
+            .info-block { padding: 18px 16px; }
+            .offer__banner { height: 100px; font-size: 26px; }
+            .survey { padding: 22px 18px; }
+            .survey__title { font-size: 19px; }
+        }
+
+        @media (min-width: 640px) {
+            .offers__list { grid-template-columns: repeat(2, 1fr); }
+        }
+
+        @media (min-width: 1024px) {
+            .offers__list { grid-template-columns: repeat(3, 1fr); }
+        }
+
+        @media (min-width: 1280px) {
+            .container { padding: 0; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- ===== Шапка ===== -->
+<header class="header">
+    <div class="header__container">
+        <a href="#" class="header__logo">Сравни Займ Онлайн</a>
+    </div>
+</header>
+
+<main class="container">
+
+    <!-- ===== Верхний блок (белая карточка) ===== -->
+    <section class="hero">
+        <h1 class="hero__title">Первый займ — бесплатно: выберите предложение</h1>
+        <p class="hero__subtitle">
+            Первый займ бесплатно доступен только новым клиентам. Срок и сумма бесплатного займа варьируется от выбранной МФО.<br/>
+            Выбрите МФО, где вы не брали займ и отправьте заявку за несколько минут.
+        </p>
+    </section>
+
+    <!-- ===== Блок предложений МФО ===== -->
+    <section>
+        <h2 class="offers__title">Подборка предложений МФО</h2>
+        <p class="offers__subtitle">
+            Сравните и выберите МФО, где вы не брали займ и получите(при одобрении выбранной МФО) первый займ бесплатно на выделенный срок.
+        </p>
+
+        <button type="button" class="survey-open-btn" id="surveyOpenBtn">
+            Изменить выбор МФО
+        </button>
+
+        <div class="offers__list" id="offersList">
+
+            <!-- Карточка 1 -->
+            <div class="offer" data-mfo="moneyman">
+                <div class="offer__banner">
+                    <img src="images/moneyman.svg" alt="MoneyMan" class="offer__banner-img">
+                </div>
+                <h3 class="offer__name">MoneyMan</h3>
+                <div class="offer__free-badge">
+                    <span class="offer__free-label">Первый займ бесплатно</span>
+                    <span class="offer__free-value">на 7 дней</span>
+                </div>
+                <div class="offer__params">
+                    <div class="offer__item offer__item_sum">
+                        <span>Сумма</span>
+                        <span class="offer__item-value">3 000 – 100 000 ₽</span>
+                    </div>
+                    <div class="offer__item">
+                        <span>Срок</span>
+                        <span class="offer__item-value">1 – 180 дней</span>
+                    </div>
+                    <div class="offer__item">
+                        <span>Возраст</span>
+                        <span class="offer__item-value">18 – 65 лет</span>
+                    </div>
+                </div>
+                <a href="https://t.fincpanetwork.ru/click/64288/101?erid=2W5zFGacKGm&sub1={region_name}&sub2={ad_id}&sub3={keyword}&sub5={source_type}&sub6={campaign_id}" class="btn">Подать заявку</a>
+            </div>
+
+            <!-- Карточка 1.5 -->
+            <div class="offer" data-mfo="credit7">
+                <div class="offer__banner">
+                    <img src="images/credit7.svg" alt="Credit7" class="offer__banner-img">
+                </div>
+                <h3 class="offer__name">Credit7</h3>
+                <div class="offer__free-badge">
+                    <span class="offer__free-label">Первый займ бесплатно</span>
+                    <span class="offer__free-value">на 7 дней</span>
+                </div>
+                <div class="offer__params">
+                    <div class="offer__item offer__item_sum">
+                        <span>Сумма</span>
+                        <span class="offer__item-value">1 000 – 30 000 ₽</span>
+                    </div>
+                    <div class="offer__item">
+                        <span>Срок</span>
+                        <span class="offer__item-value">7 – 30 дней</span>
+                    </div>
+                    <div class="offer__item">
+                        <span>Возраст</span>
+                        <span class="offer__item-value">от 18 лет</span>
+                    </div>
+                </div>
+                <a href="#" class="btn">Подать заявку</a>
+            </div>
+
+            <!-- Карточка 2 -->
+            <div class="offer" data-mfo="webbankir">
+                <div class="offer__banner">
+                    <img src="images/webbankir.svg" alt="Webbankir" class="offer__banner-img">
+                </div>
+                <h3 class="offer__name">Webbankir</h3>
+                <div class="offer__free-badge">
+                    <span class="offer__free-label">Первый займ бесплатно</span>
+                    <span class="offer__free-value">на 21 день</span>
+                </div>
+                <div class="offer__params">
+                    <div class="offer__item offer__item_sum">
+                        <span>Сумма</span>
+                        <span class="offer__item-value">1 000 – 100 000 ₽</span>
+                    </div>
+                    <div class="offer__item">
+                        <span>Срок</span>
+                        <span class="offer__item-value">7 – 365 дней</span>
+                    </div>
+                    <div class="offer__item">
+                        <span>Возраст</span>
+                        <span class="offer__item-value">от 20 лет</span>
+                    </div>
+                </div>
+                <a href="https://t.fincpanetwork.ru/click/64288/77?erid=2W5zFHR4ffP&sub1={region_name}&sub2={ad_id}&sub3={keyword}&sub5={source_type}&sub6={campaign_id}" class="btn">Подать заявку</a>
+            </div>
+
+            <!-- Карточка 3 -->
+            <div class="offer" data-mfo="turbozaim">
+                <div class="offer__banner">
+                    <img src="images/turbozaim.svg" alt="Турбозайм" class="offer__banner-img">
+                </div>
+                <h3 class="offer__name">Турбозайм</h3>
+                <div class="offer__free-badge">
+                    <span class="offer__free-label">Первый займ бесплатно</span>
+                    <span class="offer__free-value">на 7 дней</span>
+                </div>
+                <div class="offer__params">
+                    <div class="offer__item offer__item_sum">
+                        <span>Сумма</span>
+                        <span class="offer__item-value">3 000 – 100 000 ₽</span>
+                    </div>
+                    <div class="offer__item">
+                        <span>Срок</span>
+                        <span class="offer__item-value">7 – 168 дней</span>
+                    </div>
+                    <div class="offer__item">
+                        <span>Возраст</span>
+                        <span class="offer__item-value">18 – 65 лет</span>
+                    </div>
+                </div>
+                <a href="https://t.fincpanetwork.ru/click/64288/14?erid=2W5zFHvzYLZ&sub1={region_name}&sub2={ad_id}&sub3={keyword}&sub5={source_type}&sub6={campaign_id}" class="btn">Подать заявку</a>
+            </div>
+
+            <!-- Карточка 4 -->
+            <div class="offer" data-mfo="bistrodengi">
+                <div class="offer__banner">
+                    <img src="images/bistrodengi.png" alt="Быстроденьги" class="offer__banner-img">
+                </div>
+                <h3 class="offer__name">Быстроденьги</h3>
+                <div class="offer__free-badge">
+                    <span class="offer__free-label">Первый займ бесплатно</span>
+                    <span class="offer__free-value">на 7 дней</span>
+                </div>
+                <div class="offer__params">
+                    <div class="offer__item offer__item_sum">
+                        <span>Сумма</span>
+                        <span class="offer__item-value">3 000 – 100 000 ₽</span>
+                    </div>
+                    <div class="offer__item">
+                        <span>Срок</span>
+                        <span class="offer__item-value">3 – 180 дней</span>
+                    </div>
+                    <div class="offer__item">
+                        <span>Возраст</span>
+                        <span class="offer__item-value">18 – 75 лет</span>
+                    </div>
+                </div>
+                <a href="https://t.fincpanetwork.ru/click/64288/995&sub1={region_name}&sub2={ad_id}&sub3={keyword}&sub5={source_type}&sub6={campaign_id}" class="btn">Подать заявку</a>
+            </div>
+
+            <!-- Карточка 5 -->
+            <div class="offer" data-mfo="srochnodengi">
+                <div class="offer__banner">
+                    <img src="images/srochnodengi.svg" alt="Срочноденьги" class="offer__banner-img">
+                </div>
+                <h3 class="offer__name">Срочноденьги</h3>
+                <div class="offer__free-badge">
+                    <span class="offer__free-label">Первый займ бесплатно</span>
+                    <span class="offer__free-value">на 7 дней</span>
+                </div>
+                <div class="offer__params">
+                    <div class="offer__item offer__item_sum">
+                        <span>Сумма</span>
+                        <span class="offer__item-value">2 000 – 30 000 ₽</span>
+                    </div>
+                    <div class="offer__item">
+                        <span>Срок</span>
+                        <span class="offer__item-value">7 – 30 дней</span>
+                    </div>
+                    <div class="offer__item">
+                        <span>Возраст</span>
+                        <span class="offer__item-value">18 – 99 лет</span>
+                    </div>
+                </div>
+                <a href="https://t.fincpanetwork.ru/click/64288/38?erid=LjN8Kaxif&sub1={region_name}&sub2={ad_id}&sub3={keyword}&sub5={source_type}&sub6={campaign_id}" class="btn">Подать заявку</a>
+            </div>
+
+            <!-- Карточка 6 -->
+            <div class="offer" data-mfo="creditplus">
+                <div class="offer__banner">
+                    <img src="images/creditplus.svg" alt="CreditPlus" class="offer__banner-img">
+                </div>
+                <h3 class="offer__name">CreditPlus</h3>
+                <div class="offer__free-badge">
+                    <span class="offer__free-label">Первый займ бесплатно</span>
+                    <span class="offer__free-value">на 7 дней</span>
+                </div>
+                <div class="offer__params">
+                    <div class="offer__item offer__item_sum">
+                        <span>Сумма</span>
+                        <span class="offer__item-value">3 000 – 30 000 ₽</span>
+                    </div>
+                    <div class="offer__item">
+                        <span>Срок</span>
+                        <span class="offer__item-value">5 – 20 дней</span>
+                    </div>
+                    <div class="offer__item">
+                        <span>Возраст</span>
+                        <span class="offer__item-value">18 – 70 лет</span>
+                    </div>
+                </div>
+                <a href="https://platformclick.ru/s/gmu0WVPP&sub1={region_name}&sub2={ad_id}&sub3={keyword}&sub5={source_type}&sub6={campaign_id}" class="btn">Подать заявку</a>
+            </div>
+
+            <!-- Карточка 7 -->
+            <div class="offer" data-mfo="ekapusta">
+                <div class="offer__banner">
+                    <img src="images/ekapysta.png" alt="еКапуста" class="offer__banner-img">
+                </div>
+                <h3 class="offer__name">еКапуста</h3>
+                <div class="offer__free-badge">
+                    <span class="offer__free-label">Первый займ бесплатно</span>
+                    <span class="offer__free-value">на 7 дней</span>
+                </div>
+                <div class="offer__params">
+                    <div class="offer__item offer__item_sum">
+                        <span>Сумма</span>
+                        <span class="offer__item-value">1000 – 49 900 ₽</span>
+                    </div>
+                    <div class="offer__item">
+                        <span>Срок</span>
+                        <span class="offer__item-value">1 – 32 дней</span>
+                    </div>
+                    <div class="offer__item">
+                        <span>Возраст</span>
+                        <span class="offer__item-value">от 18 лет</span>
+                    </div>
+                </div>
+                <a href="#" class="btn">Подать заявку</a>
+            </div>
+
+            <!-- Карточка 8 -->
+            <div class="offer" data-mfo="dobrozaim">
+                <div class="offer__banner">
+                    <img src="images/dobrozaim.png" alt="Доброзайм" class="offer__banner-img">
+                </div>
+                <h3 class="offer__name">Доброзайм</h3>
+                <div class="offer__free-badge">
+                    <span class="offer__free-label">Первый займ бесплатно</span>
+                    <span class="offer__free-value">на 7 дней</span>
+                </div>
+                <div class="offer__params">
+                    <div class="offer__item offer__item_sum">
+                        <span>Сумма</span>
+                        <span class="offer__item-value">1 000 – 200 000 ₽</span>
+                    </div>
+                    <div class="offer__item">
+                        <span>Срок</span>
+                        <span class="offer__item-value">до 378 дней</span>
+                    </div>
+                    <div class="offer__item">
+                        <span>Возраст</span>
+                        <span class="offer__item-value">18 – 90 лет</span>
+                    </div>
+                </div>
+                <a href="#" class="btn">Подать заявку</a>
+            </div>
+
+            <!-- Карточка 9 -->
+            <div class="offer" data-mfo="ezaem">
+                <div class="offer__banner">
+                    <img src="images/ezaem.jpg" alt="Е-заем" class="offer__banner-img">
+                </div>
+                <h3 class="offer__name">Е-заем</h3>
+                <div class="offer__free-badge">
+                    <span class="offer__free-label">Первый займ бесплатно</span>
+                    <span class="offer__free-value">на 35 дней</span>
+                </div>
+                <div class="offer__params">
+                    <div class="offer__item offer__item_sum">
+                        <span>Сумма</span>
+                        <span class="offer__item-value">3 000 – 45 000 ₽</span>
+                    </div>
+                    <div class="offer__item">
+                        <span>Срок</span>
+                        <span class="offer__item-value">5 – 35 дней</span>
+                    </div>
+                    <div class="offer__item">
+                        <span>Возраст</span>
+                        <span class="offer__item-value">21 – 65 лет</span>
+                    </div>
+                </div>
+                <a href="https://platformclick.ru/s/yPwvbZcp&sub1={region_name}&sub2={ad_id}&sub3={keyword}&sub5={source_type}&sub6={campaign_id}" class="btn">Подать заявку</a>
+            </div>
+
+            <!-- Карточка 10 -->
+            <div class="offer" data-mfo="greenmoney">
+                <div class="offer__banner">
+                    <img src="images/greenmoney.jpg" alt="ГринМани" class="offer__banner-img">
+                </div>
+                <h3 class="offer__name">ГринМани</h3>
+                <div class="offer__free-badge">
+                    <span class="offer__free-label">Первый займ бесплатно</span>
+                    <span class="offer__free-value">на 35 дней</span>
+                </div>
+                <div class="offer__params">
+                    <div class="offer__item offer__item_sum">
+                        <span>Сумма</span>
+                        <span class="offer__item-value">3 000 – 50 000 ₽</span>
+                    </div>
+                    <div class="offer__item">
+                        <span>Срок</span>
+                        <span class="offer__item-value">7 – 21 дней</span>
+                    </div>
+                    <div class="offer__item">
+                        <span>Возраст</span>
+                        <span class="offer__item-value">21 – 75 лет</span>
+                    </div>
+                </div>
+                <a href="https://platformclick.ru/s/2c3tISRW&sub1={region_name}&sub2={ad_id}&sub3={keyword}&sub5={source_type}&sub6={campaign_id}" class="btn">Подать заявку</a>
+            </div>
+
+            <!-- Карточка 11 -->
+            <div class="offer" data-mfo="migcredit">
+                <div class="offer__banner">
+                    <img src="images/migcredit.jpg" alt="МигКредит" class="offer__banner-img">
+                </div>
+                <h3 class="offer__name">МигКредит</h3>
+                <div class="offer__free-badge">
+                    <span class="offer__free-label">Первый займ бесплатно</span>
+                    <span class="offer__free-value">на 35 дней</span>
+                </div>
+                <div class="offer__params">
+                    <div class="offer__item offer__item_sum">
+                        <span>Сумма</span>
+                        <span class="offer__item-value">3 000 – 30 000 ₽</span>
+                    </div>
+                    <div class="offer__item">
+                        <span>Срок</span>
+                        <span class="offer__item-value">5 – 33 дней</span>
+                    </div>
+                    <div class="offer__item">
+                        <span>Возраст</span>
+                        <span class="offer__item-value">от 18 лет</span>
+                    </div>
+                </div>
+                <a href="https://platformclick.ru/s/YswGTddv&sub1={region_name}&sub2={ad_id}&sub3={keyword}&sub5={source_type}&sub6={campaign_id}" class="btn">Подать заявку</a>
+            </div>
+
+            <!-- Карточка 12 -->
+            <div class="offer" data-mfo="yukki">
+                <div class="offer__banner">
+                    <img src="images/yukki.jpg" alt="ЮККИ" class="offer__banner-img">
+                </div>
+                <h3 class="offer__name">ЮККИ</h3>
+                <div class="offer__free-badge">
+                    <span class="offer__free-label">Первый займ бесплатно</span>
+                    <span class="offer__free-value">на 14 дней</span>
+                </div>
+                <div class="offer__params">
+                    <div class="offer__item offer__item_sum">
+                        <span>Сумма</span>
+                        <span class="offer__item-value">3 000 – 30 000 ₽</span>
+                    </div>
+                    <div class="offer__item">
+                        <span>Срок</span>
+                        <span class="offer__item-value">5 – 98 дней</span>
+                    </div>
+                    <div class="offer__item">
+                        <span>Возраст</span>
+                        <span class="offer__item-value">от 18 лет</span>
+                    </div>
+                </div>
+                <a href="https://platformclick.ru/s/otvz05tv&sub1={region_name}&sub2={ad_id}&sub3={keyword}&sub5={source_type}&sub6={campaign_id}" class="btn">Подать заявку</a>
+            </div>
+
+            <!-- Карточка 13 -->
+            <div class="offer" data-mfo="boostra">
+                <div class="offer__banner">
+                    <img src="images/boostra.svg" alt="Boostra" class="offer__banner-img">
+                </div>
+                <h3 class="offer__name">Boostra</h3>
+                <div class="offer__free-badge">
+                    <span class="offer__free-label">Первый займ бесплатно</span>
+                    <span class="offer__free-value">на 7 дней</span>
+                </div>
+                <div class="offer__params">
+                    <div class="offer__item offer__item_sum">
+                        <span>Сумма</span>
+                        <span class="offer__item-value">1 000 – 30 000 ₽</span>
+                    </div>
+                    <div class="offer__item">
+                        <span>Срок</span>
+                        <span class="offer__item-value">1 – 16 дней</span>
+                    </div>
+                    <div class="offer__item">
+                        <span>Возраст</span>
+                        <span class="offer__item-value">от 21 лет</span>
+                    </div>
+                </div>
+                <a href="https://platformclick.ru/s/hs0lZmDG&sub1={region_name}&sub2={ad_id}&sub3={keyword}&sub5={source_type}&sub6={campaign_id}" class="btn">Подать заявку</a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ===== Как выбрать займ ===== -->
+    <section class="info-block">
+        <h2>Как выбрать займ на карту</h2>
+        <p>
+            Первый займ бесплатно — это акция конкретной МФО для новых клиентов.
+            Обычно она действует на небольшую сумму и срок, а условия указаны
+            в предложении и в договоре. Если вернуть займ в срок на условиях акции,
+            проценты не начисляются. При просрочке начисляются проценты, штрафы и пени.
+        </p>
+
+        <div class="info-cols">
+            <div class="info-box">
+                <h3>Что сравнить перед заявкой</h3>
+                <ul>
+                    <li>Сумму и срок: хватит ли вам суммы.</li>
+                    <li>Полную стоимость займа (ПСК): она показывает реальную цену, а не только ставку.</li>
+                    <li>Условия при просрочке: размер штрафов и пени.</li>
+                    <li>Способ получения денег и возможные комиссии.</li>
+                    <li>Возможность продления и досрочного погашения.</li>
+                </ul>
+            </div>
+            <div class="info-box">
+                <h3>Как отправить заявку</h3>
+                <ol>
+                    <li>Выберите предложение в рейтинге и нажмите кнопку.</li>
+                    <li>Заполните анкету на сайте МФО: паспортные данные, телефон, номер банковской карты на ваше имя.</li>
+                    <li>Дождитесь решения и внимательно прочитайте договор до подписания.</li>
+                    <li>Получив деньги, сразу запишите дату возврата.</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="info-note">
+            Решение о выдаче займа принимает МФО на основании собственной оценки заёмщика,
+            одобрение не гарантировано. Прежде чем брать займ, оцените, сможете ли вы
+            вернуть его в срок. Не берите новый займ, чтобы погасить старый.
+        </div>
+    </section>
+
+    <!-- ===== Реквизиты МФО ===== -->
+    <section class="info-block">
+        <h2>Финансовые услуги предоставляют</h2>
+        <div class="mfo-list">
+
+            <details class="mfo-item">
+                <summary>Умные Наличные<span>ООО МКК «УН-ФИНАНС»</span></summary>
+                <dl>
+                    <dt>Адрес</dt>
+                    <dd>191036, г. Санкт-Петербург, ул. Гончарная, д. 13, лит. А, пом. 12-Н, оф. 214</dd>
+                    <dt>Телефон</dt>
+                    <dd>8 800 333-02-73</dd>
+                    <dt>ОГРН / ИНН</dt>
+                    <dd>1177746280337 / 9721044508</dd>
+                    <dt>Свидетельство ЦБ РФ</dt>
+                    <dd>№ 1703045008238 от 27.04.2017</dd>
+                </dl>
+            </details>
+
+            <details class="mfo-item">
+                <summary>Max.Credit<span>ООО МКК «ТВОЙ.КРЕДИТ»</span></summary>
+                <dl>
+                    <dt>Адрес</dt>
+                    <dd>191187, г. Санкт-Петербург, ул. Шпалерная, д. 8, литер А, эт./пом./ком. ц/16-Н/9</dd>
+                    <dt>Телефон</dt>
+                    <dd>8 800 555-95-32</dd>
+                    <dt>ОГРН / ИНН</dt>
+                    <dd>1157456011646 / 7459004130</dd>
+                    <dt>Свидетельство ЦБ РФ</dt>
+                    <dd>№ 001503475006803 от 07.09.2015</dd>
+                </dl>
+            </details>
+
+            <details class="mfo-item">
+                <summary>Быстроденьги<span>МФК Быстроденьги (ООО)</span></summary>
+                <dl>
+                    <dt>Адрес</dt>
+                    <dd>123290, г. Москва, 1-й Магистральный тупик, д. 11, стр. 10</dd>
+                    <dt>Телефоны</dt>
+                    <dd>8 (8422) 29-02-40, 8 (495) 690-95-99</dd>
+                    <dt>ОГРН / ИНН</dt>
+                    <dd>1087325005899 / 7325081622</dd>
+                    <dt>Свидетельство ЦБ РФ</dt>
+                    <dd>№ 2110573000002 от 08.07.2011</dd>
+                </dl>
+            </details>
+
+            <details class="mfo-item">
+                <summary>Финтерра<span>ООО МКК «ФИНТЕРРА»</span></summary>
+                <dl>
+                    <dt>Адрес</dt>
+                    <dd>630099, г. Новосибирск, ул. Октябрьская магистраль, д. 3, оф. 903</dd>
+                    <dt>Телефон</dt>
+                    <dd>8 800 301-43-44</dd>
+                    <dt>ОГРН / ИНН</dt>
+                    <dd>1114205007443 / 4205219217</dd>
+                    <dt>Свидетельство ЦБ РФ</dt>
+                    <dd>№ 651303532002603 от 15.01.2013</dd>
+                </dl>
+            </details>
+
+            <details class="mfo-item">
+                <summary>Срочно деньги<span>ООО МКК «Срочноденьги»</span></summary>
+                <dl>
+                    <dt>Адрес</dt>
+                    <dd>603022, г. Нижний Новгород, ул. Тимирязева, д. 15, корп. 2, пом. 403</dd>
+                    <dt>Телефон</dt>
+                    <dd>8 495 145-33-55</dd>
+                    <dt>ОГРН / ИНН</dt>
+                    <dd>1105260001857 / 5260271530</dd>
+                    <dt>Свидетельство ЦБ РФ</dt>
+                    <dd>№ 2110552000304 от 03.08.2011</dd>
+                </dl>
+            </details>
+
+            <details class="mfo-item">
+                <summary>До Зарплаты<span>ООО МКК «ДЗП-РАЗВИТИЕ 3»</span></summary>
+                <dl>
+                    <dt>Адрес</dt>
+                    <dd>197374, г. Санкт-Петербург, ул. Мебельная, д. 12, корп. 1, лит. А, пом. 53-Н, оф. 433</dd>
+                    <dt>Телефон</dt>
+                    <dd>8 812 389-29-93</dd>
+                    <dt>ОГРН / ИНН</dt>
+                    <dd>1157847007691 / 7838031539</dd>
+                    <dt>Свидетельство ЦБ РФ</dt>
+                    <dd>№ 001503140006947 от 12.10.2015</dd>
+                </dl>
+            </details>
+
+            <details class="mfo-item">
+                <summary>Небус<span>ООО МКК «Небус»</span></summary>
+                <dl>
+                    <dt>Адрес</dt>
+                    <dd>105066, г. Москва, ул. Новорязанская, д. 36, этаж/пом. подвал/V, ком./офис 4/1-4</dd>
+                    <dt>Телефон</dt>
+                    <dd>8 999 503-91-88</dd>
+                    <dt>ОГРН / ИНН</dt>
+                    <dd>1227700251910 / 9701204665</dd>
+                    <dt>Свидетельство ЦБ РФ</dt>
+                    <dd>№ 2203045009891 от 08.07.2022</dd>
+                </dl>
+            </details>
+
+            <details class="mfo-item">
+                <summary>Финмолл<span>ООО МКК «ФИНМОЛЛ»</span></summary>
+                <dl>
+                    <dt>Адрес</dt>
+                    <dd>630112, г. Новосибирск, ул. Фрунзе, д. 242, пом. 406</dd>
+                    <dt>Телефон</dt>
+                    <dd>8 383 210-50-04</dd>
+                    <dt>ОГРН / ИНН</dt>
+                    <dd>1117746509638 / 7705954143</dd>
+                    <dt>Свидетельство ЦБ РФ</dt>
+                    <dd>№ 651403550005541 от 19.08.2014</dd>
+                </dl>
+            </details>
+
+        </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section class="info-block faq">
+        <h2>Частые вопросы о займах</h2>
+
+        <details>
+            <summary>Правда ли, что первый займ бесплатный?</summary>
+            <p>
+                "Бесплатно" действует только для новых клиентов и на условиях конкретной МФО:
+                сумма и срок ограничены. Если не вернуть займ вовремя, начисляются проценты,
+                штрафы и пени. Точные условия смотрите в предложении МФО и в договоре.
+            </p>
+        </details>
+
+        <details>
+            <summary>Кто выдаёт займ?</summary>
+            <p>
+                Займ выдаёт МФО, а не наш сервис. Мы показываем предложения и помогаем
+                сравнить условия. Решение о выдаче принимает МФО.
+            </p>
+        </details>
+
+        <details>
+            <summary>Какие документы нужны?</summary>
+            <p>
+                Обычно нужны паспорт гражданина РФ, номер мобильного телефона и банковская
+                карта на ваше имя. Точный перечень зависит от МФО.
+            </p>
+        </details>
+
+        <details>
+            <summary>Сколько ждать решения?</summary>
+            <p>
+                Многие МФО рассматривают заявки за несколько минут, но срок зависит от
+                организации и от того, как заполнена анкета.
+            </p>
+        </details>
+
+        <details>
+            <summary>Что делать, если отказали?</summary>
+            <p>
+                Отказ одной МФО не означает отказа во всех остальных, но не стоит подавать
+                заявки подряд везде: запросы могут отражаться в вашей кредитной истории.
+                Сначала проверьте, подходите ли вы по условиям (возраст, гражданство, доход).
+                Не берите новый займ, чтобы закрыть старый.
+            </p>
+        </details>
+
+        <details>
+            <summary>Что будет, если не вернуть займ в срок?</summary>
+            <p>
+                Начисляются штрафы и пени, ухудшается кредитная история, возможно взыскание
+                долга. Если понимаете, что не успеваете, свяжитесь с МФО заранее:
+                некоторые организации предлагают продлить срок или изменить график.
+            </p>
+        </details>
+
+        <details>
+            <summary>Как проверить, что МФО работает легально?</summary>
+            <p>
+                Организация должна быть в государственном реестре МФО на сайте Банка России
+                (cbr.ru). Сверьте название, ОГРН и ИНН с реквизитами в блоке ниже.
+            </p>
+        </details>
+    </section>
+
+</main>
+
+<!-- ===== Подвал ===== -->
+<footer class="footer">
+    <p>
+        Сайт не является кредитором и не выдаёт займы. Мы показываем предложения
+        микрофинансовых организаций (МФО) и помогаем сравнить условия,
+        сайт несёт исключительно информативный характер.
+        Решение о выдаче займа принимает МФО на основании собственной оценки заёмщика.
+        Сумма, срок и ставка зависят от конкретной организации и могут отличаться
+        от указанных в предложении.
+    </p>
+    <p>
+        «Бесплатно» и другие акционные условия действуют только для новых клиентов
+        и при соблюдении условий конкретной МФО. Максимальная сумма доступна не всем
+        заёмщикам, первый займ, как правило, меньше.
+    </p>
+    <p>
+        Займ необходимо вернуть в срок. Несвоевременный возврат может привести
+        к начислению штрафов и пени, ухудшению кредитной истории и взысканию
+        задолженности. Перед оформлением внимательно изучите договор и оцените,
+        сможете ли вы вернуть займ вовремя.
+    </p>
+    <p>
+        Информация на сайте носит справочный характер и не является публичной офертой.
+        Проверить МФО можно в государственном реестре на сайте Банка России (cbr.ru).
+    </p>
+    <p>
+       Мы используем файлы cookie для того, чтобы предоставить пользователям больше возможностей при посещении сайта.
+       Оставаясь на сайте, Вы соглашаетесь на обработку файлов cookie. <a href="privacy_policy.pdf">Политика конфиденциальности</a>
+    </p>
+</footer>
+
+<!-- ===== Модальное окно опроса ===== -->
+<div class="survey-overlay" id="surveyOverlay">
+    <div class="survey" role="dialog" aria-modal="true" aria-labelledby="surveyTitle">
+        <h2 class="survey__title" id="surveyTitle">Где вы уже брали займ?</h2>
+        <p class="survey__text">
+            Отметьте МФО, в которых вы уже брали займ. Таким образом, мы покажем вам актуальные предложения именно для вас.
+        </p>
+
+        <div class="survey__list" id="surveyList">
+            <!-- чекбоксы генерируются JS -->
+        </div>
+
+        <div class="survey__actions">
+            <button type="button" class="survey__btn survey__btn--primary" id="surveyApply">
+                Показать подходящие
+            </button>
+            <button type="button" class="survey__btn survey__btn--secondary" id="surveySkip">
+                Пропустить
+            </button>
+        </div>
+    </div>
+</div>
+
+<script>
+    (function () {
+        // sessionStorage: выбор живёт до закрытия вкладки
+        var STORAGE_KEY = 'mfo_used_session_v1';
+
+        var overlay = document.getElementById('surveyOverlay');
+        var listEl = document.getElementById('surveyList');
+        var applyBtn = document.getElementById('surveyApply');
+        var skipBtn = document.getElementById('surveySkip');
+        var openBtn = document.getElementById('surveyOpenBtn');
+        var offers = document.querySelectorAll('.offer[data-mfo]');
+
+        // Собираем список МФО из карточек
+        var mfoMap = {};
+        offers.forEach(function (card) {
+            var key = card.getAttribute('data-mfo');
+            var nameEl = card.querySelector('.offer__name');
+            if (key && nameEl && !mfoMap[key]) {
+                mfoMap[key] = nameEl.textContent.trim();
+            }
+        });
+
+        // Генерируем чекбоксы
+        Object.keys(mfoMap).forEach(function (key) {
+            var label = document.createElement('label');
+            label.className = 'survey__option';
+
+            var input = document.createElement('input');
+            input.type = 'checkbox';
+            input.value = key;
+            input.name = 'mfo_used';
+
+            var span = document.createElement('span');
+            span.textContent = mfoMap[key];
+
+            label.appendChild(input);
+            label.appendChild(span);
+
+            input.addEventListener('change', function () {
+                label.classList.toggle('is-checked', input.checked);
+            });
+
+            listEl.appendChild(label);
+        });
+
+        // Применяем фильтр: скрываем отмеченные МФО
+        function applyFilter(usedList) {
+            offers.forEach(function (card) {
+                var key = card.getAttribute('data-mfo');
+                var isUsed = usedList.indexOf(key) !== -1;
+                card.classList.toggle('is-hidden', isUsed);
+            });
+        }
+
+        // Сохраняем выбор в sessionStorage (до закрытия вкладки)
+        function saveUsed(usedList) {
+            try {
+                sessionStorage.setItem(STORAGE_KEY, JSON.stringify(usedList));
+            } catch (e) { /* sessionStorage может быть недоступен */ }
+        }
+
+        // Читаем сохранённый выбор из sessionStorage
+        function loadUsed() {
+            try {
+                var raw = sessionStorage.getItem(STORAGE_KEY);
+                if (!raw) return null;
+                var parsed = JSON.parse(raw);
+                return Array.isArray(parsed) ? parsed : null;
+            } catch (e) {
+                return null;
+            }
+        }
+
+        // Синхронизировать чекбоксы с текущим выбором
+        function syncCheckboxes(usedList) {
+            listEl.querySelectorAll('input[type="checkbox"]').forEach(function (input) {
+                var isChecked = usedList.indexOf(input.value) !== -1;
+                input.checked = isChecked;
+                input.closest('.survey__option').classList.toggle('is-checked', isChecked);
+            });
+        }
+
+        // Открыть/закрыть модалку
+        function openSurvey() {
+            syncCheckboxes(loadUsed() || []);
+            overlay.classList.add('is-open');
+        }
+
+        function closeSurvey() {
+            overlay.classList.remove('is-open');
+        }
+
+        // Инициализация при загрузке
+        var saved = loadUsed();
+        if (saved) {
+            applyFilter(saved);
+        } else {
+            openSurvey();
+        }
+
+        // Кнопка "Показать подходящие"
+        applyBtn.addEventListener('click', function () {
+            var checked = Array.prototype.slice
+                .call(listEl.querySelectorAll('input[type="checkbox"]:checked'))
+                .map(function (input) { return input.value; });
+
+            applyFilter(checked);
+            saveUsed(checked);
+            closeSurvey();
+        });
+
+        // Кнопка "Пропустить"
+        skipBtn.addEventListener('click', function () {
+            applyFilter([]);
+            saveUsed([]);
+            closeSurvey();
+        });
+
+        // Кнопка "Изменить выбор МФО" — открыть опрос заново
+        openBtn.addEventListener('click', function () {
+            openSurvey();
+        });
+
+        // Закрытие по клику на фон
+        overlay.addEventListener('click', function (e) {
+            if (e.target === overlay) {
+                closeSurvey();
+            }
+        });
+
+        // Закрытие по Esc
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape' && overlay.classList.contains('is-open')) {
+                closeSurvey();
+            }
+        });
+    })();
+</script>
+
+<!-- ===== ОБРАБОТЧИК КЛИКА ПО КНОПКАМ «ПОДАТЬ ЗАЯВКУ» ===== -->
+<script>
+    (function () {
+        // Сопоставление: какое поле localStorage в какой sub-параметр писать
+        var subMapByNetwork = {
+            fcn:   ['region_name:sub1', 'ad_id:sub2', 'keyword:sub3', 'client_id:sub4', 'yclid:sub5', 'campaign_id:sub6'],
+            leads: ['region_name:aff_sub1', 'ad_id:aff_sub2', 'keyword:aff_sub3', 'client_id:aff_sub4', 'yclid:aff_sub5'],
+            rko:   ['region_name:sub1', 'ad_id:sub2', 'keyword:sub3', 'client_id:sub4', 'yclid:sub5']
+        };
+
+        // Определяем сеть по домену ссылки
+        function detectNetwork(hostname) {
+            if (hostname.indexOf('fincpanetwork') !== -1) return 'fcn';
+            if (hostname.indexOf('platformclick') !== -1) return 'leads';
+            if (hostname.indexOf('rko') !== -1) return 'rko';
+            return 'fcn';
+        }
+
+        document.querySelectorAll('.btn').forEach(function (btn) {
+            btn.setAttribute('target', '_blank');
+            btn.setAttribute('rel', 'noopener noreferrer');
+
+            btn.addEventListener('click', function (event) {
+                event.preventDefault();
+
+                var href = btn.getAttribute('href');
+                if (!href || href === '#') {
+                    // Ссылка-заглушка — просто открываем как есть
+                    window.open(href || '#', '_blank');
+                    return;
+                }
+
+                // Цель на клик по офферу
+                if (typeof ym === 'function') {
+                    var offerName = '';
+                    var card = btn.closest('.offer');
+                    if (card) {
+                        var nameEl = card.querySelector('.offer__name');
+                        if (nameEl) offerName = nameEl.textContent.trim();
+                    }
+                    ym(112928603, 'reachGoal', 'offer_click', { offer: offerName });
+                }
+
+                try {
+                    var url = new URL(href);
+
+                    // Убираем плейсхолдеры вида {region_name} из URL
+                    // (они могут остаться в href как есть, но с ними ссылка некрасивая)
+                    var cleanSearch = url.search.replace(/\{[^}]+\}/g, '');
+                    // Убираем возможные пустые && и висящие &
+                    cleanSearch = cleanSearch.replace(/&&+/g, '&').replace(/&$/g, '');
+                    url.search = cleanSearch;
+
+                    // Подставляем реальные значения из localStorage
+                    var network = detectNetwork(url.hostname);
+                    var pairs = subMapByNetwork[network] || subMapByNetwork.fcn;
+
+                    pairs.forEach(function (pair) {
+                        var parts = pair.split(':');
+                        var key = parts[0];
+                        var sub = parts[1];
+                        var val = localStorage.getItem(key);
+                        if (val) url.searchParams.set(sub, val);
+                    });
+
+                    window.open(url.toString(), '_blank');
+                } catch (err) {
+                    // Если URL кривой — открываем как есть
+                    window.open(href, '_blank');
+                }
+            });
+        });
+    })();
+</script>
+
+</body>
+</html>
